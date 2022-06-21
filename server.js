@@ -9,7 +9,7 @@ const passwordAuth = process.env.PASSWORD
 const mongoPass = process.env.MONGO_PASS
 const mongoUser = process.env.MONGO_USER
 
-mongoose.connect(`mongodb+srv://${mongoUser}:${mongoPass}@cluster0.i3et1.gcp.mongodb.net/testing?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(`mongodb+srv://VeosRob:HPFYRWbZtJGSyJjy@cluster0.gzcl7eh.mongodb.net/?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true });
 
 var db = mongoose.connection;
 
