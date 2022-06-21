@@ -41,7 +41,7 @@ app.use((req, res, next) => {
 require('./API/routes')(app);
 
 // Make the app listen to the port defined below.
-const PORT = 3000
+const PORT = process.env.PORT
 app.listen(PORT, () => {
     console.log("> App Listening to", PORT)
 })
